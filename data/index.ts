@@ -69,3 +69,28 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: "GestInvest",
+    des: "GestInvest vous offre une plateforme complète pour suivre vos actifs et analyser leur performance.",
+    img: "/p1.svg",
+    iconLists: [
+      "/next.svg",
+      "/react.svg",
+      "/ts.svg",
+      "/tailwind.svg",
+      "/boot.svg",
+    ],
+    link: "https://gest-invest.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Mon Portfolio",
+    des: "Portfolio présentant mes différents projets",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/three.svg", "/ts.svg"],
+    link: "https://github.com/Hugo-Marecal/portfolio",
+  },
+];
