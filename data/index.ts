@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "Accueil", link: "#accueil" },
   { name: "About", link: "#about" },
-  { name: "Projet", link: "#projet" },
+  { name: "Projets", link: "#projets" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -75,14 +75,8 @@ export const projects = [
     id: 1,
     title: "GestInvest",
     des: "GestInvest vous offre une plateforme complète pour suivre vos actifs et analyser leur performance.",
-    img: "/p1.svg",
-    iconLists: [
-      "/next.svg",
-      "/react.svg",
-      "/ts.svg",
-      "/tailwind.svg",
-      "/boot.svg",
-    ],
+    img: "/gestinvest.svg",
+    iconLists: ["/react.svg", "/tailwind.svg", "/boot.svg", "/ts.svg"],
     link: "https://gest-invest.vercel.app/",
   },
   {
