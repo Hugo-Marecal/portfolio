@@ -1,3 +1,4 @@
+"use client";
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/Pin";
@@ -15,18 +16,23 @@ const RecentProjects = () => {
           <div
             key={id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            onClick={() => window.open(link, "_blank")}
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl rounded-3xl">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img
+                  src={img}
+                  alt={title}
+                  className="z-10 absolute bottom-0 right-0.5 lg:rounded-3xl"
+                />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
               </h1>
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+              <p className="lg:font-normal font-light text-sm line-clamp-2">
                 {des}
               </p>
 
