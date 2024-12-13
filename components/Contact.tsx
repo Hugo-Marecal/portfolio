@@ -1,6 +1,9 @@
 "use client";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
+import { BackgroundGradientAnimation } from "./ui/GradientBg";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -48,33 +51,37 @@ const Contact = () => {
     } catch (error) {
       console.error(error);
       alert("Une erreur est survenue, réessayer plus tard !");
+      setLoading(false);
     }
   };
 
   return (
-    <section className="c-space my-20" id="contact">
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
+    <section className="c-space mb-20" id="contact">
+      <div className="relative min-h-fit md:min-h-screen flex items-center md:justify-center flex-col rounded-3xl pb-8 md:pb-0">
         <img
-          src="/terminal.png"
+          src="/terminaltest.png"
           alt="terminal background"
-          className="absolute inset-0 min-h-screen"
+          className="absolute inset-0 min-h-screen md:block hidden"
         />
-
+        <div className="md:hidden">
+          <BackgroundGradientAnimation />
+        </div>
         <div className="contact-container">
-          <h3 className="head-text">Faisons équipe !</h3>
-          <p className="text-lg text-white-600">
+          <h3 className="heading py-6">
+            Faisons <span className="text-purple">équipe !</span>
+          </h3>
+          <p className="text-lg">
             Que vous cherchiez à construire un nouveau site web, à améliorer
             votre plateforme existante ou à donner vie à un projet unique, je
             suis là pour vous aider !
           </p>
-
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="mt-12 flex flex-col space-y-7"
           >
             <label className="space-y-3">
-              <span className="field-label"> Votre Nom</span>
+              <span className="field-label">Nom</span>
               <input
                 type="text"
                 name="name"
@@ -87,7 +94,7 @@ const Contact = () => {
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Votre Email</span>
+              <span className="field-label">Email</span>
               <input
                 type="email"
                 name="email"
@@ -100,7 +107,7 @@ const Contact = () => {
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Votre message</span>
+              <span className="field-label">Message</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -112,13 +119,15 @@ const Contact = () => {
               />
             </label>
 
-            <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Envoie..." : "Envoyer votre message"}
-
-              <img
-                src="/arrow-up.png"
-                alt="arrow-up"
-                className="field-btn_arrow"
+            <button
+              className="md:pb-6 w-60 self-center"
+              type="submit"
+              disabled={loading}
+            >
+              <MagicButton
+                title={loading ? "Envoie..." : "Envoyer votre message"}
+                icon={<FaLocationArrow />}
+                position="right"
               />
             </button>
           </form>
