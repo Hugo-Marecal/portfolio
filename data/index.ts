@@ -27,16 +27,6 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  // {
-  //   id: 3,
-  //   title: "Ma stack tech",
-  //   description: "J'essaie constamment de m'améliorer",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //   imgClassName: "",
-  //   titleClassName: "justify-center",
-  //   img: "",
-  //   spareImg: "",
-  // },
   {
     id: 4,
     title: "Passionné de technologie et de développement",
@@ -92,10 +82,12 @@ export const projects = [
 export const socialMedia = [
   {
     id: 1,
+    href: "https://github.com/Hugo-Marecal",
     img: "/git.svg",
   },
   {
     id: 2,
+    href: "https://www.linkedin.com/in/hugo-marecal-developpeur-web",
     img: "/link.svg",
   },
 ];
