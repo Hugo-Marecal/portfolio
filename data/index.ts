@@ -96,10 +96,23 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Backend Développeur",
+    desc: "Création d'une base de données, développement de logique métier, mise en place authentification, utilisation de token JWT",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
   },
   {
-    id: 3,
-    img: "/link.svg",
+    id: 2,
+    title: "Développement Portfolio",
+    desc: "Utilisation de Next.js pour mise en place de mon portfolio à partir d'une maquette Figma",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
   },
 ];
