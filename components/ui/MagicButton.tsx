@@ -14,7 +14,7 @@ const MagicButton = ({
   otherClasses?: string;
 }) => {
   return (
-    <button
+    <div
       className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10"
       onClick={handleClick}
     >
@@ -26,7 +26,7 @@ const MagicButton = ({
         {title}
         {position === "right" && icon}
       </span>
-    </button>
+    </div>
   );
 };
 
