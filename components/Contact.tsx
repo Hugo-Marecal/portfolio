@@ -22,7 +22,6 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  // use emailJS for setting up
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -30,19 +29,19 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "serviceIdFromEmailJs",
-        "templateIdFromEmailJs",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE || "",
         {
           from_name: form.name,
           to_name: "Hugo",
           from_email: form.email,
-          to_email: "myemail@address.com",
+          to_email: process.env.NEXT_PUBLIC_MY_EMAIL,
           message: form.message,
         },
-        "emailJsPublicKey"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
       setLoading(false);
-      alert("Votre envoyé avec succès !");
+      alert("Votre message a été envoyé avec succès !");
       setForm({
         name: "",
         email: "",
