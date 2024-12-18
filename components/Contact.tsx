@@ -58,7 +58,7 @@ const Contact = () => {
     <section className="c-space mb-20" id="contact">
       <div className="relative min-h-fit md:min-h-screen flex items-center md:justify-center flex-col rounded-3xl pb-8 md:pb-0">
         <img
-          src="/terminaltest.png"
+          src="/terminal.png"
           alt="terminal background"
           className="absolute inset-0 min-h-screen md:block hidden"
         />
@@ -114,7 +114,7 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder=".........."
+                placeholder="Saisissez votre message"
               />
             </label>
 
