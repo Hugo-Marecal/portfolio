@@ -55,8 +55,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space mb-20" id="contact">
-      <div className="relative min-h-fit md:min-h-screen flex items-center md:justify-center flex-col rounded-3xl pb-8 md:pb-0">
+    <section className="c-space my-20 w-full " id="contact">
+      <div className="max-w-7xl relative min-h-fit md:min-h-screen flex items-center md:justify-center flex-col rounded-3xl pb-8 md:pb-0 mx-auto">
         <img
           src="/terminal.png"
           alt="terminal background"
