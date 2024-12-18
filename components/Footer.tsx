@@ -4,12 +4,9 @@ import { socialMedia } from "@/data";
 
 const Footer = () => {
   return (
-    <footer
-      className="w-full mb-[100px] md:mb-5 pb-10 border-t border-black-300"
-      id="contact"
-    >
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+    <footer className="w-full py-7 border-t border-black-300" id="contact">
+      <div className="flex md:flex-row flex-col-reverse justify-between  items-center gap-5">
+        <p className="md:text-base text-sm md:font-normal font-extralight">
           Copyright © 2024 Hugo Marecal
         </p>
 
