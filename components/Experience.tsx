@@ -4,11 +4,11 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 bg-white-200 w-full" id="testimonials">
+    <div className="py-20 bg-purple w-full" id="testimonials">
       <div className="max-w-7xl mx-auto c-space">
-        <h1 className="heading text-black-100">
-          Mon
-          <span className="text-purple"> experience</span>
+        <h1 className="heading ">
+          Mon experience
+          {/* <span className="text-purple"> experience</span> */}
         </h1>
 
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

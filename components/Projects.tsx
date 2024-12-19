@@ -50,10 +50,10 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center">
-                  <p className="flex lg:text-lg md:text-xs text-sm text-purple">
-                    Check Live Site
+                  <p className="flex lg:text-lg md:text-xs text-sms font-extrabold text-[#5927f0]">
+                    Visiter le site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-3" color="#5927f0" />
                 </div>
               </div>
             </PinContainer>
