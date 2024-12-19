@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { BackgroundGradientAnimation } from "./ui/GradientBg";
+import Image from "next/image";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -57,10 +58,13 @@ const Contact = () => {
   return (
     <section className="c-space my-20 w-full" id="contact">
       <div className="max-w-7xl relative min-h-fit md:min-h-screen flex items-center md:justify-center flex-col rounded-3xl pb-8 md:pb-0 mx-auto overflow-hidden">
-        <img
+        <Image
           src="/terminal.png"
           alt="terminal background"
           className="absolute inset-0 min-h-screen md:block hidden"
+          fill={true}
+          priority={true}
+          quality={100}
         />
         <div className="md:hidden">
           <BackgroundGradientAnimation />

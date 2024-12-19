@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 2,
     title: "Mon Portfolio",
-    des: "Portfolio présentant mes différents projets",
+    des: "Portfolio présentant mes différents projets et mon expérience.",
     img: "/portfolio2.png",
     iconLists: ["/next.svg", "/three.svg", "/ts.svg"],
     link: "https://github.com/Hugo-Marecal/portfolio",
@@ -96,14 +96,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Backend Développeur",
-    desc: "Création d'une base de données, développement de logique métier, mise en place authentification, utilisation de token JWT",
+    desc: "Conception et implémentation complète d'une architecture backend robuste : analyse des besoins, modélisation de la base de données (MCD/MLD), mise en place d'une API RESTful sécurisée. Développement des fonctionnalités métier, gestion avancée de l'authentification avec token JWT, mise en place de middleware de sécurité et validation des données.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Développement Portfolio",
-    desc: "Utilisation de Next.js pour mise en place de mon portfolio à partir d'une maquette Figma",
+    desc: "Création d'un portfolio professionnel moderne avec Next.js, en suivant une approche de développement structurée basée sur une maquette Figma. Implémentation d'une interface utilisateur responsive et interactive, optimisation des performances avec le rendu côté serveur (SSR), intégration des meilleures pratiques SEO.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },

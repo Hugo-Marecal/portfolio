@@ -8,6 +8,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const Player = dynamic(
   () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
@@ -80,10 +81,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
+              width={1920}
+              height={1080}
             />
           )}
         </div>
@@ -93,10 +96,12 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"
+              width={1920}
+              height={1080}
             />
           )}
         </div>

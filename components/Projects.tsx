@@ -3,6 +3,7 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/Pin";
 import { FaLocationArrow } from "react-icons/fa";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -21,12 +22,23 @@ const RecentProjects = () => {
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl rounded-3xl">
-                  <img src="/bg.png" alt="bg-img" />
+                  {/* <img src="/bg.png" alt="bg-img" /> */}
+                  <Image
+                    src="/bg.png"
+                    alt="bg-img"
+                    width={1920}
+                    height={1080}
+                    quality={100}
+                  />
                 </div>
-                <img
+                <Image
                   src={img}
                   alt={title}
                   className="z-10 absolute bottom-0 right-0.5 lg:rounded-3xl"
+                  width={1920}
+                  height={1080}
+                  priority={true}
+                  quality={100}
                 />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -42,9 +54,15 @@ const RecentProjects = () => {
                     <div
                       key={icon}
                       className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                      style={{ transform: `translateX(-${4 * index * 2}px)` }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      <Image
+                        src={icon}
+                        alt={icon}
+                        className="p-2"
+                        width={128}
+                        height={128}
+                      />
                     </div>
                   ))}
                 </div>
