@@ -73,7 +73,7 @@ export const projects = [
     id: 2,
     title: "Mon Portfolio",
     des: "Portfolio présentant mes différents projets",
-    img: "/portfolio.svg",
+    img: "/portfolio2.png",
     iconLists: ["/next.svg", "/three.svg", "/ts.svg"],
     link: "https://github.com/Hugo-Marecal/portfolio",
   },
