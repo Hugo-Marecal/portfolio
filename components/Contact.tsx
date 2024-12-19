@@ -73,7 +73,7 @@ const Contact = () => {
           <h3 className="heading py-6">
             Faisons <span className="text-purple">équipe !</span>
           </h3>
-          <p className="text-lg">
+          <p className="text-lg text-white-100 font-semibold">
             Que vous cherchiez à construire un nouveau site web, à améliorer
             votre plateforme existante ou à donner vie à un projet unique, je
             suis là pour vous aider !
