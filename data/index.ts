@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Flexible en ce qui concerne les communications",
+    title: "Mobile et adaptable selon la localisation du client",
     description: "",
     className: "lg:col-span-2 md:col-span-3 lg:row-span-4 md:row-span-4",
     imgClassName: "",
@@ -95,7 +95,7 @@ export const socialMedia = [
 export const workExperience = [
   {
     id: 1,
-    title: "Backend Développeur",
+    title: "Backend Développeur GestInvest",
     desc: "Conception et implémentation complète d'une architecture backend robuste : analyse des besoins, modélisation de la base de données (MCD/MLD), mise en place d'une API RESTful sécurisée. Développement des fonctionnalités métier, gestion avancée de l'authentification avec token JWT, mise en place de middleware de sécurité et validation des données.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",

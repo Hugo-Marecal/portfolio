@@ -32,7 +32,7 @@ const Experience = () => {
                   height={128}
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-center md:text-start text-xl md:text-2xl font-bold">
+                  <h1 className="text-center md:text-start text-xl md:text-xl font-bold">
                     {card.title}
                   </h1>
                   <p className="text-justify md:text-start text-white-100 mt-3 font-semibold">
