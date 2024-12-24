@@ -1,8 +1,7 @@
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -26,10 +25,21 @@ const Hero = () => {
             Hey, Je suis Hugo, Développeur FullStack JavaScript.
           </p>
 
-          <a href="#projets">
+          <a
+            href="https://github.com/Hugo-Marecal"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
             <MagicButton
               title="Voir mon travail"
-              icon={<FaLocationArrow />}
+              icon={
+                <Image
+                  src="/git.svg"
+                  alt="github logo"
+                  width={24}
+                  height={24}
+                />
+              }
               position="right"
             />
           </a>

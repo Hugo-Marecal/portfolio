@@ -17,12 +17,11 @@ const RecentProjects = () => {
           <div
             key={id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            onClick={() => window.open(link, "_blank")}
+            // onClick={() => window.open(link, "_blank")}
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl rounded-3xl">
-                  {/* <img src="/bg.png" alt="bg-img" /> */}
                   <Image
                     src="/bg.png"
                     alt="bg-img"
@@ -67,12 +66,17 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="flex justify-center"
+                >
                   <p className="flex lg:text-lg md:text-xs text-sms font-extrabold text-[#5927f0]">
                     Visiter le site
                   </p>
                   <FaLocationArrow className="ms-3" color="#5927f0" />
-                </div>
+                </a>
               </div>
             </PinContainer>
           </div>
