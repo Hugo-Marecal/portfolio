@@ -17,7 +17,6 @@ const RecentProjects = () => {
           <div
             key={id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            // onClick={() => window.open(link, "_blank")}
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -70,7 +69,7 @@ const RecentProjects = () => {
                   href={link}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="flex justify-center"
+                  className="flex justify-center hover:scale-125 transition-transform duration-300 -translate-x-5"
                 >
                   <p className="flex lg:text-lg md:text-xs text-sms font-extrabold text-[#5927f0]">
                     Visiter le site
